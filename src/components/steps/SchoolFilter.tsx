@@ -171,14 +171,26 @@ export const SchoolFilter: React.FC<StepProps> = ({ state, updateState, onNext, 
 
       <Card>
         <CardTitle><DollarSign className="w-4 h-4" /> {lang === 'zh' ? '年學費上限' : 'Max Annual Tuition'}</CardTitle>
-        <Slider 
-          min={20000} 
-          max={80000} 
-          step={5000} 
-          value={filters.maxTuition} 
-          valueDisplay={`$${filters.maxTuition.toLocaleString()}`}
-          onChange={e => updateState({ filters: { ...filters, maxTuition: parseInt(e.target.value) } })}
-        />
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-bold text-blue-400">
+              $0 – ${filters.maxTuition.toLocaleString()} {lang === 'zh' ? '每年' : 'per year'}
+            </span>
+            <Input 
+              type="number" 
+              className="w-24 h-8 text-xs" 
+              value={filters.maxTuition} 
+              onChange={e => updateState({ filters: { ...filters, maxTuition: parseInt(e.target.value) || 0 } })}
+            />
+          </div>
+          <Slider 
+            min={0} 
+            max={100000} 
+            step={1000} 
+            value={filters.maxTuition} 
+            onChange={e => updateState({ filters: { ...filters, maxTuition: parseInt(e.target.value) } })}
+          />
+        </div>
       </Card>
 
       <Card className="border-emerald-500/30">

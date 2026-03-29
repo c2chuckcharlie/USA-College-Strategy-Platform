@@ -206,12 +206,39 @@ export const AdmissionAnalysis: React.FC<StepProps> = ({ state, updateState, onN
         </div>
       </Card>
 
+      <Card>
+        <CardTitle>
+          <div className="flex items-center gap-2">
+            <TrendingUp className="w-4 h-4 text-blue-400" />
+            {lang === 'zh' ? '學科背景提升建議' : 'Strategic Background Advice'}
+          </div>
+        </CardTitle>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {selectedDiscs.map(d => (
+            <div key={d} className="p-4 rounded-xl border border-blue-500/10 bg-white/5 space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">{DISC_CONFIG[d]?.icon}</span>
+                <h4 className="font-bold text-blue-400">{d}</h4>
+              </div>
+              <ul className="space-y-2">
+                {(DISC_CONFIG[d]?.gapAdvice[lang] || []).map((advice, idx) => (
+                  <li key={idx} className="text-xs text-slate-400 flex items-start gap-2">
+                    <span className="text-blue-500 mt-1">•</span>
+                    {advice}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </Card>
+
       <div className="flex justify-between pt-4">
         <Button variant="secondary" size="lg" onClick={onPrev}>
           ← {lang === 'zh' ? '上一步' : 'Back'}
         </Button>
         <Button variant="nav" size="lg" onClick={onNext}>
-          {lang === 'zh' ? '差距分析' : 'Gap Analysis'} →
+          {lang === 'zh' ? 'ROI 職涯' : 'ROI & Career'} →
         </Button>
       </div>
     </div>

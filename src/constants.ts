@@ -36,7 +36,6 @@ export const SCHOOL_DB: School[] = [
 export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   Business: {
     icon: '💼', color: 'var(--biz)', tag: 'tag-gold',
-    radarLabels: { zh: ['SAT', 'GPA', '商業經歷', '領導力', '實習', '文書'], en: ['SAT', 'GPA', 'Biz Exp', 'Leadership', 'Internship', 'Essay'] },
     requirements: { zh: 'AACSB認證、實習管道、量化能力', en: 'AACSB accreditation, internship pipeline, quant skills' },
     gapAdvice: {
       zh: ['爭取暑期實習機會', '參加 DECA/FBLA 競賽', '提升 SAT 數學至 750+', '加入投資或創業社團'],
@@ -45,7 +44,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Psychology: {
     icon: '🧠', color: 'var(--psy)', tag: 'tag-purple',
-    radarLabels: { zh: ['SAT', 'GPA', '研究經歷', '寫作力', '社會關懷', '文書'], en: ['SAT', 'GPA', 'Research', 'Writing', 'Empathy', 'Essay'] },
     requirements: { zh: '研究助理經歷、寫作力、心理學相關課程', en: 'Research assistant experience, writing strength, psych-related coursework' },
     gapAdvice: {
       zh: ['申請心理學實驗室研究助理', '閱讀並摘要心理學論文', '參與心理健康志工服務', '選修 AP Psychology 或 Statistics'],
@@ -54,7 +52,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   'Political Science': {
     icon: '⚖️', color: 'var(--pol)', tag: 'tag-teal',
-    radarLabels: { zh: ['SAT', 'GPA', '公民參與', '辯論/MUN', '寫作力', '文書'], en: ['SAT', 'GPA', 'Civic Engage', 'Debate/MUN', 'Writing', 'Essay'] },
     requirements: { zh: '公民參與、辯論能力、政治議題寫作', en: 'Civic engagement, debate skills, political issue writing' },
     gapAdvice: {
       zh: ['加入辯論隊或 Model UN', '參與地方政府政策實習', '撰寫政治評論投稿校刊', '閱讀 Foreign Affairs、政治學期刊'],
@@ -63,7 +60,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Economics: {
     icon: '📊', color: 'var(--eco)', tag: 'tag-green',
-    radarLabels: { zh: ['SAT', 'GPA', '數學能力', '研究分析', '商業理解', '文書'], en: ['SAT', 'GPA', 'Math', 'Research', 'Business', 'Essay'] },
     requirements: { zh: '強數學背景、統計分析、經濟研究', en: 'Strong math background, statistics, economic research' },
     gapAdvice: {
       zh: ['修習 AP Calculus BC 和 AP Statistics', '參加經濟學研究項目或論文比賽', '學習 Python/R 數據分析', '閱讀經濟學人、Freakonomics'],
@@ -72,34 +68,30 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Sociology: {
     icon: '🌐', color: 'var(--soc)', tag: 'tag-pink',
-    radarLabels: { zh: ['SAT', 'GPA', '社區參與', '研究寫作', '社會意識', '文書'], en: ['SAT', 'GPA', 'Community', 'Research', 'Social Awareness', 'Essay'] },
     requirements: { zh: '社區參與、批判性寫作、社會研究', en: 'Community engagement, critical writing, social research' },
     gapAdvice: {
-      zh: ['主導社區服務或公益項目', '撰寫社會議題分析文章', '參加社會學研究助理項目', '關注不平等、多元文化相關議題'],
+      zh: ['主導社區服務 or 公益項目', '撰寫社會議題分析文章', '參加社會學研究助理項目', '關注不平等、多元文化相關議題'],
       en: ['Lead community service or social justice projects', 'Write social issue analysis pieces', 'Join sociology research assistant programs', 'Engage with inequality and diversity topics']
     }
   },
   Anthropology: {
     icon: '🏺', color: 'var(--ant)', tag: 'tag-gold',
-    radarLabels: { zh: ['SAT', 'GPA', '田野研究', '跨文化理解', '寫作力', '文書'], en: ['SAT', 'GPA', 'Fieldwork', 'Cross-cultural', 'Writing', 'Essay'] },
     requirements: { zh: '田野研究、多語言能力、文化理解', en: 'Fieldwork experience, multilingual ability, cultural understanding' },
     gapAdvice: {
-      zh: ['參加文化交流或海外服務項目', '學習第二外語', '參與考古或民族誌研究', '閱讀人類學田野報告'],
+      zh: ['參加文化交流或海外服務項目', '學習 second 或第三外語', '參與考古或民族誌研究', '閱讀人類學田野報告'],
       en: ['Join cultural exchange or overseas service programs', 'Learn a second language', 'Participate in archaeological or ethnographic research', 'Read anthropological fieldwork reports']
     }
   },
   Geography: {
     icon: '🌍', color: 'var(--geo)', tag: '',
-    radarLabels: { zh: ['SAT', 'GPA', '地理/環境研究', '數據分析', '全球意識', '文書'], en: ['SAT', 'GPA', 'Geo Research', 'Data Analysis', 'Global Awareness', 'Essay'] },
     requirements: { zh: '地理信息系統(GIS)、環境研究、全球視野', en: 'GIS skills, environmental research, global perspective' },
     gapAdvice: {
-      zh: ['學習 GIS（ArcGIS/QGIS）技術', '參與環境或氣候變遷研究', '加入地理學社或環保組織', '了解城市規劃和永續發展議題'],
+      zh: ['學習 GIS（ArcGIS/QGIS）技術', '參與環境 or 氣候變遷研究', '加入地理學社或環保組織', '了解城市規劃和永續發展議題'],
       en: ['Learn GIS (ArcGIS/QGIS) tools', 'Join environmental or climate research projects', 'Join geography or environmental clubs', 'Explore urban planning and sustainability topics']
     }
   },
   'Computer Science': {
     icon: '💻', color: 'var(--cs)', tag: 'tag-teal',
-    radarLabels: { zh: ['SAT', 'GPA', '數學/演算法', '程式作品', '競賽/Hackathon', '文書'], en: ['SAT', 'GPA', 'Math/Algo', 'Portfolio', 'Competition', 'Essay'] },
     requirements: { zh: '強數學背景、程式作品集、競賽成績', en: 'Strong math, coding portfolio, competitive programming' },
     gapAdvice: {
       zh: ['建立 GitHub 程式作品集', '參加 USACO、Hackathon 等競賽', '修習 AP Computer Science A/Principles', '貢獻開源項目或自主開發 App'],
@@ -108,7 +100,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Engineering: {
     icon: '⚙️', color: 'var(--eng)', tag: 'tag-gold',
-    radarLabels: { zh: ['SAT', 'GPA', '數學/物理', '工程實作', '競賽', '文書'], en: ['SAT', 'GPA', 'Math/Physics', 'Engineering Projects', 'Competition', 'Essay'] },
     requirements: { zh: 'AP Physics/Calculus、工程競賽、動手實作', en: 'AP Physics/Calculus, engineering competitions, hands-on projects' },
     gapAdvice: {
       zh: ['參加 Science Olympiad、FIRST Robotics 等工程競賽', '修習 AP Physics C 和 AP Calculus BC', '建立工程設計作品集', '尋求大學工程實驗室或 Research 機會'],
@@ -117,7 +108,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   'Data Science': {
     icon: '📈', color: 'var(--data)', tag: 'tag-green',
-    radarLabels: { zh: ['SAT', 'GPA', '統計/數學', '資料分析', '程式能力', '文書'], en: ['SAT', 'GPA', 'Stats/Math', 'Data Analysis', 'Coding', 'Essay'] },
     requirements: { zh: '統計學、Python/R 能力、資料分析專案', en: 'Statistics, Python/R skills, data analysis projects' },
     gapAdvice: {
       zh: ['學習 Python + Pandas + Matplotlib 資料分析', '修習 AP Statistics 並深化統計知識', '完成 Kaggle 或 UCI 資料集分析專案', '建立資料視覺化作品集'],
@@ -126,7 +116,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Biology: {
     icon: '🧬', color: 'var(--bio)', tag: 'tag-green',
-    radarLabels: { zh: ['SAT', 'GPA', '生物/化學', '實驗室研究', '科展', '文書'], en: ['SAT', 'GPA', 'Bio/Chem', 'Lab Research', 'Science Fair', 'Essay'] },
     requirements: { zh: 'AP Biology/Chemistry、實驗室研究、科學競賽', en: 'AP Biology/Chemistry, lab research, science competitions' },
     gapAdvice: {
       zh: ['申請大學或醫院生物實驗室研究職位', '參加 Intel ISEF、Regeneron 等科學競賽', '修習 AP Biology 和 AP Chemistry', '尋求醫療院所志工或 Shadow 機會'],
@@ -135,7 +124,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Accounting: {
     icon: '📒', color: 'var(--acc)', tag: 'tag-purple',
-    radarLabels: { zh: ['SAT', 'GPA', '數學/統計', '商業競賽', '實習', '文書'], en: ['SAT', 'GPA', 'Math/Stats', 'Business Comp', 'Internship', 'Essay'] },
     requirements: { zh: '數學能力、AP 統計、商業競賽(DECA/FBLA)', en: 'Math skills, AP Statistics, business competitions' },
     gapAdvice: {
       zh: ['參加 DECA Accounting 競賽', '修習 AP Statistics', '尋找稅務或財務相關暑期實習', '了解 CPA 考試路徑'],
@@ -144,7 +132,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Finance: {
     icon: '💰', color: 'var(--fin)', tag: 'tag-gold',
-    radarLabels: { zh: ['SAT', 'GPA', '數學/量化', '投資知識', '實習', '文書'], en: ['SAT', 'GPA', 'Math/Quant', 'Finance Knowledge', 'Internship', 'Essay'] },
     requirements: { zh: '量化能力、投資相關知識、金融實習', en: 'Quantitative skills, investment knowledge, finance internship' },
     gapAdvice: {
       zh: ['加入學校投資俱樂部', '模擬股票投資組合管理', '尋找金融機構暑期實習', '學習 Bloomberg/Excel 金融建模'],
@@ -153,16 +140,14 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   'International Relations': {
     icon: '🌏', color: 'var(--ir)', tag: 'tag-teal',
-    radarLabels: { zh: ['SAT', 'GPA', '公民/辯論', '語言能力', '政策研究', '文書'], en: ['SAT', 'GPA', 'Civic/Debate', 'Language', 'Policy Research', 'Essay'] },
     requirements: { zh: '辯論/MUN、外語能力、政策議題研究', en: 'Debate/MUN, foreign language skills, policy research' },
     gapAdvice: {
-      zh: ['深耕 Model UN 並爭取最佳代表獎', '學習第二或第三外語', '撰寫國際政策分析文章', '尋找外交部或 NGO 相關實習'],
+      zh: ['深耕 Model UN 並爭取最佳代表獎', '學習 second 或第三外語', '撰寫國際政策分析文章', '尋找外交部或 NGO 相關實習'],
       en: ['Excel in Model UN and win Best Delegate', 'Learn a second or third language', 'Write international policy analysis pieces', 'Seek State Dept or NGO internship']
     }
   },
   History: {
     icon: '📜', color: 'var(--hist)', tag: '',
-    radarLabels: { zh: ['SAT', 'GPA', '寫作分析', '歷史研究', '批判思維', '文書'], en: ['SAT', 'GPA', 'Writing', 'Historical Research', 'Critical Thinking', 'Essay'] },
     requirements: { zh: 'AP History、批判性寫作、歷史研究能力', en: 'AP History, critical writing, historical research' },
     gapAdvice: {
       zh: ['修習 AP US History、AP World History', '撰寫歷史議題分析文章並投稿', '閱讀歷史學術著作和一手文獻', '參加歷史知識競賽或寫作競賽'],
@@ -171,7 +156,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Literature: {
     icon: '📖', color: 'var(--lit)', tag: 'tag-purple',
-    radarLabels: { zh: ['SAT', 'GPA', '寫作能力', '閱讀廣度', '創意寫作', '文書'], en: ['SAT', 'GPA', 'Writing', 'Reading Breadth', 'Creative Writing', 'Essay'] },
     requirements: { zh: 'AP English、創意寫作、廣泛閱讀', en: 'AP English, creative writing, broad reading' },
     gapAdvice: {
       zh: ['修習 AP English Literature', '參加創意寫作工作坊', '向學校刊物或校外文學誌投稿', '廣泛閱讀當代及古典文學作品'],
@@ -180,7 +164,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Philosophy: {
     icon: '🤔', color: 'var(--phil)', tag: '',
-    radarLabels: { zh: ['SAT', 'GPA', '邏輯分析', '辯論', '寫作', '文書'], en: ['SAT', 'GPA', 'Logic/Analysis', 'Debate', 'Writing', 'Essay'] },
     requirements: { zh: '邏輯能力、辯論、批判性寫作', en: 'Logical reasoning, debate, critical writing' },
     gapAdvice: {
       zh: ['修習邏輯學或哲學選修課', '加入辯論隊強化論點構建能力', '閱讀哲學原典（蘇格拉底、康德、維根斯坦）', '撰寫哲學議題評論並尋求發表機會'],
@@ -189,7 +172,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Design: {
     icon: '🎨', color: 'var(--des)', tag: 'tag-pink',
-    radarLabels: { zh: ['SAT', 'GPA', '設計作品集', '創意', '技術工具', '文書'], en: ['SAT', 'GPA', 'Design Portfolio', 'Creativity', 'Technical Tools', 'Essay'] },
     requirements: { zh: '設計作品集、創意思維、數位工具能力', en: 'Design portfolio, creative thinking, digital tools' },
     gapAdvice: {
       zh: ['建立專業設計作品集（Behance/個人網站）', '學習 Figma、Adobe Suite、Procreate', '參加設計競賽或 UX Hackathon', '研究設計思維（Design Thinking）方法論'],
@@ -198,7 +180,6 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   Music: {
     icon: '🎵', color: 'var(--mus)', tag: 'tag-purple',
-    radarLabels: { zh: ['SAT', 'GPA', '音樂演奏', '作曲/理論', '表演經驗', '文書'], en: ['SAT', 'GPA', 'Performance', 'Composition', 'Experience', 'Essay'] },
     requirements: { zh: '演奏技術、音樂理論、表演/比賽經驗', en: 'Performance skills, music theory, competition/performance experience' },
     gapAdvice: {
       zh: ['準備高水準的演奏作品集（audition tape）', '參加全州/全國音樂競賽或青年交響樂團', '學習音樂理論：和聲、對位法', '嘗試作曲並錄製作品'],
@@ -207,16 +188,14 @@ export const DISC_CONFIG: Record<string, DisciplineConfig> = {
   },
   'Film & Media': {
     icon: '🎬', color: 'var(--film)', tag: '',
-    radarLabels: { zh: ['SAT', 'GPA', '作品集', '技術能力', '創意視野', '文書'], en: ['SAT', 'GPA', 'Portfolio', 'Technical Skills', 'Creative Vision', 'Essay'] },
     requirements: { zh: '影片/媒體作品集、敘事能力、技術工具', en: 'Film/media portfolio, storytelling, technical tools' },
     gapAdvice: {
-      zh: ['建立短片/媒體作品集', '學習 Final Cut Pro、Premiere、After Effects', '參加本地電影節或青少年媒體競賽', '撰寫劇本並組隊拍攝短片'],
+      zh: ['建立短片/媒體作品集', '學習 Final Cut Pro、Premiere、After Effects', '參加本地電影節 or 青少年媒體競賽', '撰寫劇本並組隊拍攝短片'],
       en: ['Build a short film or media portfolio', 'Learn Final Cut Pro, Premiere, After Effects', 'Enter local film festivals or youth media competitions', 'Write scripts and film short projects with peers']
     }
   },
   Other: {
     icon: '✏️', color: '#94a3b8', tag: '',
-    radarLabels: { zh: ['SAT', 'GPA', '學科相關經歷', '領導力', '寫作/研究', '文書'], en: ['SAT', 'GPA', 'Discipline Exp', 'Leadership', 'Writing/Research', 'Essay'] },
     requirements: { zh: '一般通用評估模型', en: 'General evaluation model' },
     gapAdvice: {
       zh: ['深入探索您所選科系的核心課程與研究', '尋找相關實習或社區項目累積實際經驗', '與該領域導師建立聯繫，獲得推薦信', '在文書中清楚說明您選擇此科系的動機與未來目標'],

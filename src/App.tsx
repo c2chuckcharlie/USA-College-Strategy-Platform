@@ -8,7 +8,6 @@ import { AnimatePresence, motion } from 'motion/react';
 import { StudentProfile } from './components/steps/StudentProfile';
 import { SchoolFilter } from './components/steps/SchoolFilter';
 import { AdmissionAnalysis } from './components/steps/AdmissionAnalysis';
-import { GapAnalysis } from './components/steps/GapAnalysis';
 import { ROICareer } from './components/steps/ROICareer';
 import { AISterategy } from './components/steps/AISterategy';
 import { ScenarioSimulator } from './components/steps/ScenarioSimulator';
@@ -20,7 +19,6 @@ const STEPS = [
   { zh: '學生資料', en: 'Profile' },
   { zh: '學校篩選', en: 'Filter' },
   { zh: '錄取分析', en: 'Analysis' },
-  { zh: '差距分析', en: 'Gap' },
   { zh: 'ROI職涯', en: 'ROI' },
   { zh: 'AI策略', en: 'Strategy' },
   { zh: '情境模擬', en: 'Simulator' },
@@ -124,13 +122,12 @@ export default function App() {
           {state.currentStep === 1 && <StudentProfile state={state} updateState={updateState} onNext={nextStep} />}
           {state.currentStep === 2 && <SchoolFilter state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
           {state.currentStep === 3 && <AdmissionAnalysis state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 4 && <GapAnalysis state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 5 && <ROICareer state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 6 && <AISterategy state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 7 && <ScenarioSimulator state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 8 && <FamilyAlignment state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 9 && <AICoach state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
-          {state.currentStep === 10 && <FinalReport state={state} updateState={updateState} onPrev={prevStep} onReset={() => setState(INITIAL_STATE)} />}
+          {state.currentStep === 4 && <ROICareer state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
+          {state.currentStep === 5 && <AISterategy state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
+          {state.currentStep === 6 && <ScenarioSimulator state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
+          {state.currentStep === 7 && <FamilyAlignment state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
+          {state.currentStep === 8 && <AICoach state={state} updateState={updateState} onNext={nextStep} onPrev={prevStep} />}
+          {state.currentStep === 9 && <FinalReport state={state} updateState={updateState} onPrev={prevStep} onReset={() => setState(INITIAL_STATE)} />}
         </motion.div>
       </AnimatePresence>
     </Layout>

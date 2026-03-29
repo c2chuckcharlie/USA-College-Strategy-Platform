@@ -40,7 +40,6 @@ export interface DisciplineConfig {
   icon: string;
   color: string;
   tag: string;
-  radarLabels: { zh: string[]; en: string[] };
   requirements: { zh: string; en: string };
   gapAdvice: { zh: string[]; en: string[] };
 }

@@ -278,6 +278,9 @@ export const StudentProfile: React.FC<StepProps> = ({ state, updateState, onNext
           <Star className="w-4 h-4" />
           {lang === 'zh' ? '核心能力自評' : 'Core Competency Self-Assessment'}
         </CardTitle>
+        <p className="text-[10px] text-slate-500 mb-4 italic">
+          {lang === 'zh' ? '「1 = 最弱，10 = 最強」' : '“1 = weakest, 10 = strongest”'}
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Slider label={lang === 'zh' ? '領導力' : 'Leadership'} min={1} max={10} value={state.softSkills.lead} valueDisplay={state.softSkills.lead} onChange={e => updateState({ softSkills: { ...state.softSkills, lead: parseInt(e.target.value) } })} />
           <Slider label={lang === 'zh' ? '寫作/分析' : 'Writing/Analytical'} min={1} max={10} value={state.softSkills.write} valueDisplay={state.softSkills.write} onChange={e => updateState({ softSkills: { ...state.softSkills, write: parseInt(e.target.value) } })} />
